@@ -38,6 +38,7 @@ jobs:
                 git add -A
                 git config --local user.email "18110055@student.hcmute.edu.vn"
                 git config --local user.name "MyNameIsToan"
+                git config --global --add safe.directory '*'
                 git commit -m "deploy"
                 
             - name: Force push to destination branch
