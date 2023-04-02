@@ -36,7 +36,6 @@ jobs:
                 git init
                 touch .nojekyll
                 git add -A
-                git config --global --add safe.Sphinx *
                 git config --local user.email "18110055@student.hcmute.edu.vn"
                 git config --local user.name "MyNameIsToan"
                 git commit -m "deploy"
