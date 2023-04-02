@@ -41,7 +41,7 @@ jobs:
                 git commit -m "deploy"
             
             - name: Solve permission issue
-              run: git config --global --add safe.directory *
+              run: git config --global --add safe.directory /github/workspace/docs/_build/html
         
             - name: Force push to destination branch
               uses: ad-m/github-push-action@v0.5.0
