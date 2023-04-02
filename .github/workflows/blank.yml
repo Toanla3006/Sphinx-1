@@ -40,6 +40,9 @@ jobs:
                 git config --local user.name "MyNameIsToan"
                 git commit -m "deploy"
             
+            - name: Check the data
+              run: ls $GITHUB_WORKSPACE
+            
             - name: Solve permission issue
               run: git config --global --add safe.directory /github/workspace/docs/_build/html
         
